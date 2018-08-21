@@ -1,2 +1,2 @@
-# GW2BenchmarkSimulator
-Monte Carlo simulator of golem benchmarks
+# Monte Maelstrom
+Combat Monte Carlo simulator for Guild Wars 2
