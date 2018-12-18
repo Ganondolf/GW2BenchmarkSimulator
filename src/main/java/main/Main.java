@@ -1,7 +1,8 @@
 package main;
 
+import build.Discipline;
 import build.Strength;
-import build.Trait;
+import build.Tactics;
 import entity.Player;
 import entity.Warrior;
 
@@ -9,9 +10,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		try {
-			Trait first = new Strength(3, 2, 2);
-			Player player = new Warrior(first);
-			System.out.println(player);
+			Player warrior = new Warrior(new Strength(3, 2, 1), new Discipline(2, 1, 1), new Tactics(3, 3, 1));
+			System.out.println(warrior);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
