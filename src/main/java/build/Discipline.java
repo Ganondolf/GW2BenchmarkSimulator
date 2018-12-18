@@ -1,9 +1,9 @@
 package build;
 
-public class Discipline extends WarriorTraitline {
+public class Discipline extends WarriorSpecialization {
 
 	void minors() {
-        this.traitline = TraitlineEnum.DISCIPLINE;
+        this.specialization = SpecializationEnum.DISCIPLINE;
 		this.minorAdept = WarriorTraitEnum.VERSATILE_RAGE;
 		this.minorMaster = WarriorTraitEnum.FAST_HANDS;
 		this.minorGrandMaster = WarriorTraitEnum.VERSATILE_POWER;

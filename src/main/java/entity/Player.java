@@ -1,8 +1,7 @@
 package entity;
 
-import build.ProfessionEnum;
-import build.Traitline;
-
+import build.Specialization;
+import equip.WeaponSet;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
@@ -14,12 +13,14 @@ import lombok.experimental.Accessors;
 public abstract class Player {
 	@Setter(AccessLevel.NONE)
 	ProfessionEnum profession;
-	Traitline first;
-	Traitline second;
-	Traitline third;
+	Specialization first;
+	Specialization second;
+	Specialization third;
+	WeaponSet principalWeaponSet;
+	WeaponSet secondaryWeaponSet;
 
 	@Override
 	public String toString() {
-		return "Player [" + profession + ", first=" + first + ", second=" + second + ", third=" + third + "]";
+		return "Player " + profession + " [" + first + ", " + second + ", " + third + "]";
 	}
 }

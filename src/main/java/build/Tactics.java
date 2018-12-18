@@ -1,9 +1,9 @@
 package build;
 
-public class Tactics extends WarriorTraitline {
+public class Tactics extends WarriorSpecialization {
 
 	void minors() {
-        this.traitline = TraitlineEnum.TACTICS;
+        this.specialization = SpecializationEnum.TACTICS;
 		this.minorAdept = WarriorTraitEnum.DETERMINED_REVIVAL;
 		this.minorMaster = WarriorTraitEnum.REVIVERS_MIGHT;
 		this.minorGrandMaster = WarriorTraitEnum.INSPIRING_PRESENCE;

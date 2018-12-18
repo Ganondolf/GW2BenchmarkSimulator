@@ -8,9 +8,9 @@ import lombok.experimental.Accessors;
 @Accessors(fluent = true)
 @Getter
 @Setter
-public abstract class Traitline {
+public abstract class Specialization {
 	@Setter(AccessLevel.NONE)
-	TraitlineEnum traitline;
+	SpecializationEnum specialization;
 	TraitEnum minorAdept;
 	TraitEnum majorAdept;
 	TraitEnum minorMaster;
@@ -20,10 +20,13 @@ public abstract class Traitline {
 
 	abstract void minors();
 
+	public Specialization() {
+		minors();
+	}
+
 	@Override
 	public String toString() {
-		return "Traitline [" + traitline + ", minorAdept=" + minorAdept + ", majorAdept=" + majorAdept
-				+ ", minorMaster=" + minorMaster + ", majorMaster=" + majorMaster + ", minorGrandmaster="
-				+ minorGrandMaster + ", majorGrandMaster=" + majorGrandMaster + "]";
+		return "Specialization " + specialization + " [" + minorAdept + ", " + majorAdept + ", " + minorMaster + ", "
+				+ majorMaster + ", " + minorGrandMaster + ", " + majorGrandMaster + "]";
 	}
 }

@@ -1,6 +1,6 @@
 package build;
 
-public enum TraitlineEnum {
+public enum SpecializationEnum {
     // Warrior
     STRENGTH,
     DISCIPLINE,

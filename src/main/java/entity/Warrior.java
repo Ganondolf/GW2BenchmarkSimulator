@@ -1,7 +1,6 @@
 package entity;
 
-import build.ProfessionEnum;
-import build.WarriorTraitline;
+import build.WarriorSpecialization;
 
 public class Warrior extends Player {
 
@@ -9,7 +8,7 @@ public class Warrior extends Player {
 		this.profession = ProfessionEnum.WARRIOR;
 	}
 
-	public Warrior(WarriorTraitline first, WarriorTraitline second, WarriorTraitline third) {
+	public Warrior(WarriorSpecialization first, WarriorSpecialization second, WarriorSpecialization third) {
 		this();
 		this.first = first;
 		this.second = second;

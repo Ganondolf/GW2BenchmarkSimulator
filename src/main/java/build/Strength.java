@@ -1,9 +1,9 @@
 package build;
 
-public class Strength extends WarriorTraitline {
+public class Strength extends WarriorSpecialization {
 
 	void minors() {
-		this.traitline = TraitlineEnum.STRENGTH;
+		this.specialization = SpecializationEnum.STRENGTH;
 		this.minorAdept = WarriorTraitEnum.RECKLESS_DODGE;
 		this.minorMaster = WarriorTraitEnum.BUILDING_MOMENTUM;
 		this.minorGrandMaster = WarriorTraitEnum.PINNACLE_OF_STRENGTH;
