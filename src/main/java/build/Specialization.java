@@ -18,12 +18,6 @@ public abstract class Specialization {
 	TraitEnum minorGrandMaster;
 	TraitEnum majorGrandMaster;
 
-	abstract void minors();
-
-	public Specialization() {
-		minors();
-	}
-
 	@Override
 	public String toString() {
 		return "Specialization " + specialization + " [" + minorAdept + ", " + majorAdept + ", " + minorMaster + ", "

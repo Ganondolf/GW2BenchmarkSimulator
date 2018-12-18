@@ -2,12 +2,10 @@ package build;
 
 public class Strength extends WarriorSpecialization {
 
-	void minors() {
-		this.specialization = SpecializationEnum.STRENGTH;
-		this.minorAdept = WarriorTraitEnum.RECKLESS_DODGE;
-		this.minorMaster = WarriorTraitEnum.BUILDING_MOMENTUM;
-		this.minorGrandMaster = WarriorTraitEnum.PINNACLE_OF_STRENGTH;
-	}
+	SpecializationEnum specialization = SpecializationEnum.STRENGTH;
+	WarriorTraitEnum minorAdept = WarriorTraitEnum.RECKLESS_DODGE;
+	WarriorTraitEnum minorMaster = WarriorTraitEnum.BUILDING_MOMENTUM;
+	WarriorTraitEnum minorGrandMaster = WarriorTraitEnum.PINNACLE_OF_STRENGTH;
 
 	public Strength(WarriorTraitEnum majorAdept, WarriorTraitEnum majorMaster, WarriorTraitEnum majorGrandMaster) {
 		super(majorAdept, majorMaster, majorGrandMaster);

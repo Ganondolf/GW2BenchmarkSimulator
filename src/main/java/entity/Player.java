@@ -13,14 +13,14 @@ import lombok.experimental.Accessors;
 public abstract class Player {
 	@Setter(AccessLevel.NONE)
 	ProfessionEnum profession;
-	Specialization first;
-	Specialization second;
-	Specialization third;
+	Specialization firstSpec;
+	Specialization secondSpec;
+	Specialization thirdSpec;
 	WeaponSet principalWeaponSet;
 	WeaponSet secondaryWeaponSet;
 
 	@Override
 	public String toString() {
-		return "Player " + profession + " [" + first + ", " + second + ", " + third + "]";
+		return "Player " + profession + " [" + firstSpec + ", " + secondSpec + ", " + thirdSpec + "]";
 	}
 }

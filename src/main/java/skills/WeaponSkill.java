@@ -6,7 +6,7 @@ import lombok.experimental.Accessors;
 @Accessors(fluent = true)
 @Getter
 public abstract class WeaponSkill {
-    boolean autoattack = false;
+    Double damage;
     Double aftercast;
     Double castTime;
     Double cooldown;

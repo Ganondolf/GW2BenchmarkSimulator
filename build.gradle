@@ -45,3 +45,7 @@ lombok {
 	version = '1.18.4'
 	sha256 = ""
 }
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+version = '1.8'

@@ -21,7 +21,7 @@ public class Main {
 		try {
 			Player warrior = new Warrior(new Strength(3, 2, 1), new Discipline(2, 1, 1), new Tactics(3, 3, 1));
 			warrior.principalWeaponSet(new WeaponSet(new WarriorAxe(), new WarriorAxe()));
-			System.out.println(warrior);
+			logger.info("{}", warrior);
 		} catch (Exception e) {
 			logger.error("Exception while executing main", e);
 		}

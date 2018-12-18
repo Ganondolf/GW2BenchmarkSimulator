@@ -8,11 +8,11 @@ public class Warrior extends Player {
 		this.profession = ProfessionEnum.WARRIOR;
 	}
 
-	public Warrior(WarriorSpecialization first, WarriorSpecialization second, WarriorSpecialization third) {
+	public Warrior(WarriorSpecialization firstSpec, WarriorSpecialization secondSpec, WarriorSpecialization thirdSpec) {
 		this();
-		this.first = first;
-		this.second = second;
-		this.third = third;
+		this.firstSpec = firstSpec;
+		this.secondSpec = secondSpec;
+		this.thirdSpec = thirdSpec;
 	}
 
 }

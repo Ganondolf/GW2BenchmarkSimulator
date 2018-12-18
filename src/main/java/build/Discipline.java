@@ -2,12 +2,10 @@ package build;
 
 public class Discipline extends WarriorSpecialization {
 
-	void minors() {
-        this.specialization = SpecializationEnum.DISCIPLINE;
-		this.minorAdept = WarriorTraitEnum.VERSATILE_RAGE;
-		this.minorMaster = WarriorTraitEnum.FAST_HANDS;
-		this.minorGrandMaster = WarriorTraitEnum.VERSATILE_POWER;
-	}
+	SpecializationEnum specialization = SpecializationEnum.DISCIPLINE;
+	WarriorTraitEnum minorAdept = WarriorTraitEnum.VERSATILE_RAGE;
+	WarriorTraitEnum minorMaster = WarriorTraitEnum.FAST_HANDS;
+	WarriorTraitEnum minorGrandMaster = WarriorTraitEnum.VERSATILE_POWER;
 
 	public Discipline(WarriorTraitEnum majorAdept, WarriorTraitEnum majorMaster, WarriorTraitEnum majorGrandMaster) {
 		super(majorAdept, majorMaster, majorGrandMaster);
